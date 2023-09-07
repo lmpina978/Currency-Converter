@@ -1,0 +1,7 @@
+print("Welcome to Currency Convertor")
+print("Please enter your starting currency")
+currencyA = input()
+print("Please enter your ending currency")
+currencyB = input()
+print("Please enter the amount")
+amount = input()

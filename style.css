@@ -1,16 +1,32 @@
-body > div {
+.description > h1 {
+    color: white;
+}
+
+.page {
     display: flex;
     width: 100%;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #08c025;
 }
 
-body > div > div {
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 35%;
     height: 75%;
     border: 10px black;
     border-radius: 5%;
     background-color: white;
+    padding-left: 20px;
+}
+
+select {
+    width: 50%;
+}
+
+input {
+    width: 50%;
 }

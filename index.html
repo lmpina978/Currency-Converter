@@ -18,14 +18,14 @@
             <div class="menu">
                 <div>
                     <label for="currencyA">From</label>
-                    <select name="currencyA" id="currencyA" onclick="fetchCurrencies(currencyA)">
+                    <select name="currencyA" id="currencyA" onclick="fetchCurrencies('currencyA')">
                         <option value="USD" selected>USD - United States Dollar</option>
                     </select>
                 </div>   
 
                 <div>
                     <label for="currencyB">To</label>
-                    <select name="currencyB" id="currencyB" onclick="fetchCurrencies(currencyA)">
+                    <select name="currencyB" id="currencyB" onclick="fetchCurrencies('currencyB')">
                         <option value="USD" selected>USD - United States Dollar</option>
                     </select>
                 </div>
@@ -37,7 +37,7 @@
 
                 <button type="button" class="btn btn-primary">Convert</button>
 
-                <h3>0.93 EUR</h3>
+                <h3>1.00 USD</h3>
             </div>
         </div>
     </body>

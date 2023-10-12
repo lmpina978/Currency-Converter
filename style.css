@@ -59,6 +59,10 @@ option {
 input {
     width: 90%;
     padding: 5px;
+    color: white;
+    background-color: rgba(43, 43, 43, 0.551);
+    border: solid;
+    border-color: white;
 }
 
 button {

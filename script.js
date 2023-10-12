@@ -41,14 +41,19 @@ async function currencyCalculations(currencyA, currencyB, amount, display)
         }
     }
 
+    display = document.getElementById(display);
+
     var result = userAmount * (rateB / rateA);
-    if (result > 0.01) {
-        result = result.toFixed(2);
+    if (result >= 0) {
+        if (result > 0.01) {
+            result = result.toFixed(2);
+        }
+        else {
+            result = result.toPrecision(2);
+        }
+        display.innerText = result + " " + curB_name.value;
     }
     else {
-        result = result.toPrecision(2);
+        display.innerText = "Invalid amount";
     }
-
-    display = document.getElementById(display);
-    display.innerText = result + " " + curB_name.value;
 }

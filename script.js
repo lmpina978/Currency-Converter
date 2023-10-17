@@ -1,5 +1,13 @@
 const apiKey = 'bf69802c79904002ba1d2b435771995f';
 
+//Calls the currencyCalculations function if the enter key is pressed
+document.addEventListener("keypress", function(event) {
+    if(event.key === "Enter"){
+        event.preventDefault();
+        currencyCalculations('currencyA', 'currencyB', 'amount', 'result');
+    }
+});
+
 // Function to fetch currency data from the OpenExchangeRates API
 async function fetchCurrencies(id) {
     const apiUrl = `https://openexchangerates.org/api/currencies.json?app_id=${apiKey}`;
@@ -19,6 +27,7 @@ async function fetchCurrencies(id) {
     }
 }
 
+//Function to convert currencies
 async function currencyCalculations(currencyA, currencyB, amount, display)
 {
     const curUrl = `https://openexchangerates.org/api/latest.json?app_id=${apiKey}`;
